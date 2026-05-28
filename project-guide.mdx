@@ -22,6 +22,67 @@ title: "Project Guide"
     </Accordion>
   </Accordion>
 
-  <Accordion>
+  <Accordion title="Processing existing topography">
+    Verify existing ground drawing setup, naming standards, surface configuration, data shortcut setup, project association, and correct EX\_Ground data shortcut organization.
+
+    <Info>
+      place holder reference naming page
+    </Info>
+
+    <Accordion title="Detailed Steps">
+      1. **Check roadway linework**\
+         Verify the centerline and parallel roadway features run consistently along each tangent.
+      2. **Verify offsets**\
+         Confirm curb/edge offsets are consistent and intentional across the site.
+      3. **Check intersections**\
+         Ensure centerlines meet exactly at roadway intersections.
+      4. **Review layers**\
+         Use `LAYISO` to confirm roadway objects are on the correct layers.
+      5. **Confirm elevations**\
+         Set all 2D linework and blocks to elevation `0`.
+    </Accordion>
   </Accordion>
 </AccordionGroup>
+
+<Steps>
+  <Step title="Site geometric control QAQC">
+    Verify site geometry consistency, including centerline alignment, parallel offsets, intersection connectivity, correct layer assignment, and all linework/block elevations set to 0.
+
+    <Accordion title="Detailed Steps">
+      1. **Check roadway linework**\
+         Verify the centerline and parallel roadway features run consistently along each tangent.
+      2. **Verify offsets**\
+         Confirm curb/edge offsets are consistent and intentional across the site.
+      3. **Check intersections**\
+         Ensure centerlines meet exactly at roadway intersections.
+      4. **Review layers**\
+         Use `LAYISO` to confirm roadway objects are on the correct layers.
+      5. **Confirm elevations**\
+         Set all 2D linework and blocks to elevation `0`.
+    </Accordion>
+  </Step>
+  <Step title="Processing existing topography">
+    Verify existing ground drawing setup, naming standards, surface configuration, data shortcut setup, project association, and correct EX\_Ground data shortcut organization.
+
+    <Info>
+      place holder reference naming page
+    </Info>
+
+    <Accordion title="Detailed Steps">
+      1. Verify an `EX_Ground - Project #` drawing exists in the active Civil 3D project directory.
+      2. If the drawing does not exist, create it using the project standards template.
+      3. Verify the drawing name follows company naming standards.
+
+      - Ensure the `EX_Ground` surface is a local surface and not data referenced.
+      - Set the Civil 3D working folder to the active project directory.
+      - Set the data shortcut project folder to the active project directory.
+      - Create a data shortcut project if one does not already exist.
+      - Associate the current drawing to the active data shortcut project.
+      - Create a data shortcut for the `EX_Ground` surface if one does not already exist.
+      - Verify the `EX_Ground` data shortcut is located in the correct Toolspace data shortcut folder structure.
+    </Accordion>
+  </Step>
+  <Step title="Create PR_Ground drawing ">
+    Use the C3D\_Design Template for this design file type
+  </Step>
+</Steps>

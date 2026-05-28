@@ -17,7 +17,8 @@
             "group": "Standards",
             "pages": [
               "Standards/overview",
-              "Standards/plotting"
+              "Standards/plotting",
+              "Standards/templates"
             ]
           }
         ]
