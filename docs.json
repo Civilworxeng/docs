@@ -29,10 +29,14 @@
             "pages": [
               "Training Workshops/overview",
               {
-                "group": "SB001",
+                "group": "SB001 - Civilworx Nova Court",
                 "pages": [
                   "stages"
                 ]
+              },
+              {
+                "group": "SB002 - Civilworx Nova Residential",
+                "pages": []
               }
             ]
           }
