@@ -11,31 +11,6 @@
   "navigation": {
     "tabs": [
       {
-        "tab": "Guides",
-        "groups": [
-          {
-            "group": "Getting started",
-            "pages": [
-              "index",
-              "quickstart",
-              "development"
-            ]
-          },
-          {
-            "group": "Customization",
-            "pages": []
-          },
-          {
-            "group": "Writing content",
-            "pages": []
-          },
-          {
-            "group": "Agent ready",
-            "pages": []
-          }
-        ]
-      },
-      {
         "tab": "Standards",
         "groups": [
           {
@@ -109,5 +84,8 @@
     "socials": {
       "linkedin": "https://www.linkedin.com/company/civilworx-llc"
     }
+  },
+  "interaction": {
+    "drilldown": false
   }
 }
