@@ -1,6 +1,6 @@
 {
   "$schema": "https://mintlify.com/docs.json",
-  "theme": "willow",
+  "theme": "luma",
   "name": "Civilworx Engineering",
   "colors": {
     "primary": "#0B63D1",
