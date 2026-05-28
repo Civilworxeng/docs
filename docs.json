@@ -36,7 +36,9 @@
               },
               {
                 "group": "SB002 - Civilworx Nova Residential",
-                "pages": []
+                "pages": [
+                  "untitled-page"
+                ]
               }
             ]
           }
