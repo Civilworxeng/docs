@@ -27,7 +27,26 @@
           {
             "group": "Training Workshops",
             "pages": [
-              "Standards/Training Workshops/overview"
+              "Training Workshops/overview",
+              "Training Workshops/Training Workshop Overview"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "SB001",
+        "groups": [
+          {
+            "group": "Overview",
+            "pages": [
+              "SB001/Project Overview",
+              "SB001/Stages Overview"
+            ]
+          },
+          {
+            "group": "Guides",
+            "pages": [
+              "SB001/Guides/PR_Ground - SB001"
             ]
           }
         ]
