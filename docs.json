@@ -16,7 +16,8 @@
           {
             "group": "Standards",
             "pages": [
-              "Standards/overview"
+              "Standards/overview",
+              "Standards/plotting"
             ]
           }
         ]
@@ -31,7 +32,8 @@
               {
                 "group": "SB001 - Civilworx Nova Court",
                 "pages": [
-                  "stages"
+                  "stages",
+                  "project-guide"
                 ]
               },
               {

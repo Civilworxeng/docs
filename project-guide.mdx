@@ -1,0 +1,22 @@
+---
+title: "Project Guide"
+---
+
+# PR\_Ground  - SB001
+
+<Accordion title="Site geometric control QAQC">
+  Verify site geometry consistency, including centerline alignment, parallel offsets, intersection connectivity, correct layer assignment, and all linework/block elevations set to 0.
+
+  <Accordion title="Detailed Steps" icon="1">
+    1. **Check roadway linework**\
+       Verify the centerline and parallel roadway features run consistently along each tangent.
+    2. **Verify offsets**\
+       Confirm curb/edge offsets are consistent and intentional across the site.
+    3. **Check intersections**\
+       Ensure centerlines meet exactly at roadway intersections.
+    4. **Review layers**\
+       Use `LAYISO` to confirm roadway objects are on the correct layers.
+    5. **Confirm elevations**\
+       Set all 2D linework and blocks to elevation `0`.
+  </Accordion>
+</Accordion>
