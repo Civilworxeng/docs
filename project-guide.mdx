@@ -4,61 +4,26 @@ title: "Project Guide"
 
 # PR\_Ground  - SB001
 
-<AccordionGroup>
-  <Accordion title="Site geometric control QAQC">
-    Verify site geometry consistency, including centerline alignment, parallel offsets, intersection connectivity, correct layer assignment, and all linework/block elevations set to 0.
-
-    <Accordion title="Detailed Steps">
-      1. Confirm drawing settings is placed in international feet
-      2. **Check roadway linework**\
-         Verify the centerline and parallel roadway features run consistently along each tangent.
-      3. **Verify offsets**\
-         Confirm curb/edge offsets are consistent and intentional across the site.
-      4. **Check intersections**\
-         Ensure centerlines meet exactly at roadway intersections.
-      5. **Review layers**\
-         Use `LAYISO` to confirm roadway objects are on the correct layers.
-      6. **Confirm elevations**\
-         Set all 2D linework and blocks to elevation `0`.
-    </Accordion>
-  </Accordion>
-
-  <Accordion title="Processing existing topography">
-    Verify existing ground drawing setup, naming standards, surface configuration, data shortcut setup, project association, and correct EX\_Ground data shortcut organization.
-
-    <Info>
-      place holder reference naming page
-    </Info>
-
-    <Accordion title="Detailed Steps">
-      1. **Check roadway linework**\
-         Verify the centerline and parallel roadway features run consistently along each tangent.
-      2. **Verify offsets**\
-         Confirm curb/edge offsets are consistent and intentional across the site.
-      3. **Check intersections**\
-         Ensure centerlines meet exactly at roadway intersections.
-      4. **Review layers**\
-         Use `LAYISO` to confirm roadway objects are on the correct layers.
-      5. **Confirm elevations**\
-         Set all 2D linework and blocks to elevation `0`.
-    </Accordion>
-  </Accordion>
-</AccordionGroup>
-
 <Steps>
   <Step title="Site geometric control QAQC">
     Verify site geometry consistency, including centerline alignment, parallel offsets, intersection connectivity, correct layer assignment, and all linework/block elevations set to 0.
 
     <Accordion title="Detailed Steps">
-      1. **Check roadway linework**\
-         Verify the centerline and parallel roadway features run consistently along each tangent.
-      2. **Verify offsets**\
-         Confirm curb/edge offsets are consistent and intentional across the site.
-      3. **Check intersections**\
-         Ensure centerlines meet exactly at roadway intersections.
-      4. **Review layers**\
-         Use `LAYISO` to confirm roadway objects are on the correct layers.
-      5. **Confirm elevations**\
+      1. **Verify drawing settings is in international feet**\
+         Toolspace → Settings → Right Click on drawing name → Drawing Settings
+      2. **Check geometry parallel linework**\
+         Ver
+      3. **Check geometry parallel linework**\
+         Verify the linework and parallel  features run consistently along each entity intentionally.
+      4. **Verify offsets**\
+         Confirm  offsets are consistent and intentional across the site.
+      5. **Check intersections**\
+         Ensure linework meet exactly at crossing intersections.
+      6. **Polylines joined or broken **\
+         Ensure that all polylines are joined intentionally and broken intentionally for quick extraction
+      7. **Review layers**\
+         Use `LAYISO` to confirm site features are on the correct layers.
+      8. **Confirm elevations**\
          Set all 2D linework and blocks to elevation `0`.
     </Accordion>
   </Step>
@@ -91,5 +56,33 @@ title: "Project Guide"
     </Info>
   </Step>
   <Step title="Xref bases">
+    add bases
+  </Step>
+  <Step title="Site evaluation and linework placement">
+    Evaluate on how you would model your site and what Civil3D features best fits the site
+
+    <Accordion title="Starting from scratch details">
+      <Note>
+        Ncopy or Copy linework by layer and paste inside of PR\_Ground
+      </Note>
+
+      1. Extract lip of curb linework and place on the **C-Feat-Baseline** layer
+      2. Extract sidewalk linework and place on the **C-Feat** layer
+      3. Extract 
+    </Accordion>
+
+    <Accordion title="Using helper to layout linework">
+      go to folder annd find it and use it copy and paste\
+
+      <Tree>
+        <Tree.Folder name="Civil3D">
+          <Tree.Folder name="Stages">
+            <Tree.Folder name="Helper">
+              <Tree.File name="something.dwg" />
+            </Tree.Folder>
+          </Tree.Folder>
+        </Tree.Folder>
+      </Tree>
+    </Accordion>
   </Step>
 </Steps>
