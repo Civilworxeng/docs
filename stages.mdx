@@ -2,38 +2,51 @@
 title: "Stages Overview"
 ---
 
-## Stages Overview (SB001 - Civilworx Nova Court)
-
-#### Summary:
+### Summary:
 
 Each Civil3D file type will have stages associated to it, this gives you a starting point at different "Stages" for a project setup. This gives the user to intentionally start and focus on a specific objective for training.
 
-#### How to Implement:
+### How to Implement:
 
-Work in progress
+- Open desired file and do a save as and replace the corresponding file in the Civil3D folder
+
+### Folder Location
+
+<Tree>
+  <Tree.Folder name="AutoCAD" defaultOpen>
+    <Tree.Folder name="Civil3D" defaultOpen>
+      <Tree.Folder name="Stages" defaultOpen>
+        <Tree.Folder name="PR_Ground" />
+        <Tree.Folder name="PR_Storm" />
+        <Tree.Folder name="PR_Sanitary" />
+        <Tree.Folder name="PR_Water" />
+      </Tree.Folder>
+    </Tree.Folder>
+  </Tree.Folder>
+</Tree>
 
 <Tip>
   Each stage next in the subsequential order is in addition the previous stage numbers
 </Tip>
 
-#### PR\_Ground - SB001
+### PR\_Ground - SB001
 
 <AccordionGroup>
-  <Accordion title="00">
+  <Accordion title="00 [Start from the beginning]">
     Clean drawing that gives the user a fresh setup
   </Accordion>
 
-  <Accordion title="01">
+  <Accordion title="01 [Perform my own site evaluation and determine what to use]">
     Drawing with project base Xrefs attached
   </Accordion>
 
-  <Accordion title="02">
+  <Accordion title="02 [Starting off strong with linework ready to convert to feature lines]">
     - Polylines added with layers associated to the feature line purpose (General, Baselines, Reference, Sidewalk)
     - Existing Ground data referenced
     - Proposed Ground (Post Design) data referenced
   </Accordion>
 
-  <Accordion title="03">
+  <Accordion title="03 [Im here just for the corridor]">
     Feature lines
 
     - Styles Applied to feature lines when created
@@ -49,7 +62,7 @@ Work in progress
     - Corridor shrinkwrap boundary applied
   </Accordion>
 
-  <Accordion title="04">
+  <Accordion title="04 [Im here to build supplementary corridors]">
     Feature lines
 
     - Elevation points added to crossing feature lines on same site
@@ -61,7 +74,7 @@ Work in progress
     - Corridor feature lines extracted
   </Accordion>
 
-  <Accordion title="05">
+  <Accordion title="05 [Placeholder]">
     ADA back curb ramp
 
     - Feature lines created from existing polylines
@@ -80,6 +93,6 @@ Work in progress
     - Breakline sets named according by the contents
   </Accordion>
 
-  <Accordion title="06">
+  <Accordion title="06 [Placeholder]">
   </Accordion>
 </AccordionGroup>

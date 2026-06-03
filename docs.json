@@ -16,6 +16,7 @@
           {
             "group": "Standards",
             "pages": [
+              "Standards/folder-directory",
               "Standards/overview",
               "Standards/plotting",
               "Standards/templates",
@@ -31,15 +32,16 @@
             "group": "Sandbox Projects",
             "pages": [
               "Training Workshops/overview",
+              "Training Workshops/untitled-page",
               {
-                "group": "SB001 - Civilworx Nova Court",
+                "group": "SB001 - Nova Court",
                 "pages": [
                   "stages",
                   "project-guide"
                 ]
               },
               {
-                "group": "SB002 - Civilworx Nova Residential",
+                "group": "SB002 - Nova Residential",
                 "pages": [
                   "untitled-page"
                 ]
