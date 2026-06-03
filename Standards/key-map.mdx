@@ -8,7 +8,9 @@ Keymaps are necessary to give contractors/reviewers on the relative location of 
 
 ### Strategy:
 
-Create during the preliminary engineering plans project setup. 
+This workflow allows making it possible to make updates to your keymap at any part of the project and to retain existing KeyMap references in all of your drawings. We are using
+
+### Guide / Walkthrough
 
 <AccordionGroup>
   <Accordion title="Creating your KeyMap Block">
@@ -81,10 +83,15 @@ Create during the preliminary engineering plans project setup.
         Select the blocks in the cluster and "Ref Edit" or "Edit Block in Place" and trim the linework that is extending past the boundary area
       </Step>
       <Step title="Create KeyMap Block">
-        Select all of the site blocks that are in the cluster together, and create a block with the following properties:
+        Select all of the site blocks that are in the cluster together, and create a block with the following properties:\
+
+        <Accordion title="KeyMap Block Definition (Image)">
+          <Frame>
+            ![Mintlify Key Map Block Example](/images/Mintlify_KeyMap_Block_Example.png)
+          </Frame>
+        </Accordion>
 
         <Frame>
-          ![Mintlify Key Map Example](/images/Mintlify_KeyMap_Example.png)
         </Frame>
       </Step>
       <Step title="Purge Drawing">
@@ -99,8 +106,7 @@ Create during the preliminary engineering plans project setup.
         3. Xref in an existing legend.dwg that is set up for a keymap as an overlay
         4. Place KeyMap block insertion point generally in the center of the KeyMap open area.\
            _(See Image for reference)_
-
-        1. Scale block manually to where it generally fits into the open area\
+        5. Scale block manually to where it generally fits into the open area\
            _(See Image for reference)_
 
         <AccordionGroup>
@@ -134,5 +140,37 @@ Create during the preliminary engineering plans project setup.
   </Accordion>
 
   <Accordion title="Modifying your KeyMap Block">
+    <Steps>
+      <Step title="Open source and destination drawings">
+        - Open your KeyMap\_Update - Project ID.dwg
+        - Open the master file with the changes
+      </Step>
+      <Step title="Copy and paste from source to destination">
+        1. Copy all of the linework from your master file\
+           **_Keep in your temporary clipboard_**
+        2. Proceed to open the corresponding block that is the same name as your source drawing name
+        3. Select similar of all the linework that you are replacing
+        4. Delete linework
+        5. Paste original coordinates in the block
+        6. Save and close block
+
+        <Tip>
+          To use select similar easier: make sure to do a **_PEDIT_** → **_Multiple_** → then select all of your source linework to not leave any stragglers
+        </Tip>
+      </Step>
+      <Step title="Update KeyMap block in titleblock.dwg">
+        1. Copy your KeyMap block and your Mtext with block property data\
+           **_Keep in your temporary clipboard_**
+        2. Delete KeyMap Block
+        3. Navigate to the drawing performance panel and purge all
+        4. Paste your block into drawing
+      </Step>
+      <Step title="Save and proceed">
+        1. Click on your block while looking at the Mtext data
+        2. Update your KeyMap Block based on the data
+        3. Delete your Mtext data block
+        4. Save and Proceed
+      </Step>
+    </Steps>
   </Accordion>
 </AccordionGroup>
