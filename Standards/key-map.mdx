@@ -2,128 +2,137 @@
 title: "KeyMap"
 ---
 
-### Summary: 
+### Summary:
+
+Keymaps are necessary to give contractors/reviewers on the relative location of your plan views throughout the construction sheets. 
 
 ### Strategy:
 
 Create during the preliminary engineering plans project setup. 
 
-<Steps>
-  <Step title='Create new drawing from template "CWX_Empty"'>
-    Since we don't need any styles or settings regarding this process, we want the lightest template possible, as there will be purging frequently.
-  </Step>
-  <Step title="Save your drawing">
-    Save in Construction sheets folder as Keymap\_Update - Project ID
+<AccordionGroup>
+  <Accordion title="Creating your KeyMap Block">
+    <Steps>
+      <Step title='Create new drawing from template "CWX_Empty"'>
+        Since we don't need any styles or settings regarding this process, we want the lightest template possible, as there will be purging frequently.
+      </Step>
+      <Step title="Save your drawing">
+        Save in Construction sheets folder as Keymap\_Update - Project ID
 
-    <Tree>
-      <Tree.Folder name="Autocad" defaultOpen>
-        <Tree.Folder name="Construction Sheets" defaultOpen>
-          <Tree.File name="Keymap_Update - Project ID" />
-        </Tree.Folder>
-      </Tree.Folder>
-    </Tree>
-  </Step>
-  <Step title="XREF in Base Files">
-    Xattach the respective base files from the master folder. We primarily want to see only the Site & Mapping linework\
+        <Tree>
+          <Tree.Folder name="Autocad" defaultOpen>
+            <Tree.Folder name="Construction Sheets" defaultOpen>
+              <Tree.File name="Keymap_Update - Project ID" />
+            </Tree.Folder>
+          </Tree.Folder>
+        </Tree>
+      </Step>
+      <Step title="XREF in Base Files">
+        Xattach the respective base files from the master folder. We primarily want to see only the Site & Mapping linework\
 
-    <Tip>
-      Placeholder for page on best practice
-    </Tip>
-  </Step>
-  <Step title="Xref → Bind → Insert ">
-    Select all Xrefs and insert them as blocks
+        <Tip>
+          Placeholder for page on best practice
+        </Tip>
+      </Step>
+      <Step title="Xref → Bind → Insert ">
+        Select all Xrefs and insert them as blocks
 
-    <Tip>
-      Placeholder for page on best practice
-    </Tip>
-  </Step>
-  <Step title="QAQC Linework">
-    1. Delete all contents that is not needed for the KeyMap including blocks
-    2. Ensure all linework object properties are in acordance with the Civilworx standard properties
+        <Tip>
+          Placeholder for page on best practice
+        </Tip>
+      </Step>
+      <Step title="QAQC Linework">
+        1. Delete all contents that is not needed for the KeyMap including blocks
+        2. Ensure all linework object properties are in acordance with the Civilworx standard properties
 
-    <Note>
-      place holder for SOPs
-    </Note>
-  </Step>
-  <Step title="Copy blocks and move down">
-    We want to retain the blocks as their names will be what drawing they were inserted from. Then we need to copy the block cluster and arbitrarily set off below the project area
+        <Note>
+          place holder for SOPs
+        </Note>
+      </Step>
+      <Step title="Copy blocks and move down">
+        We want to retain the blocks as their names will be what drawing they were inserted from. Then we need to copy the block cluster and arbitrarily set off below the project area
 
-    <Warning>
-      Caution: Do not explode any blocks, after this step you will have double the blocks that you started out with. 
-    </Warning>
-  </Step>
-  <Step title="Visually separate out blocks (Column Ordering)">
-    Take each site block and separate them out side by side to where you can see their relative site extents
-  </Step>
-  <Step title="Define outline area">
-    1. Navigate towards an existing overall site production drawing "ex: Overall Site Plan"
-    2. Open overall sheet layout
-    3. Trace a rectangle around the viewport
-    4. Change the space of your rectangle from "paper" to "Model" while maintaining the visual scale.\
-       \[CHSPACE\]
-    5. Open model
-    6. Select the rectangle
-    7. Cut out and paste original coordinates to Keymap\_Update.dwg\
-       \[Ctrl\+X" → Paste Original Coordinates\]
+        <Warning>
+          Caution: Do not explode any blocks, after this step you will have double the blocks that you started out with. 
+        </Warning>
+      </Step>
+      <Step title="Visually separate out blocks (Column Ordering)">
+        Take each site block and separate them out side by side to where you can see their relative site extents
+      </Step>
+      <Step title="Define outline area">
+        1. Navigate towards an existing overall site production drawing "ex: Overall Site Plan"
+        2. Open overall sheet layout
+        3. Trace a rectangle around the viewport
+        4. Change the space of your rectangle from "paper" to "Model" while maintaining the visual scale.\
+           \[CHSPACE\]
+        5. Open model
+        6. Select the rectangle
+        7. Cut out and paste original coordinates to Keymap\_Update.dwg\
+           \[Ctrl\+X" → Paste Original Coordinates\]
 
-    <Check>
-      Validate the following: 
+        <Check>
+          Validate the following: 
 
-      - Drawing settings from source to destination
-      - Viewport / Layout consistency standards ""
-    </Check>
-  </Step>
-  <Step title="Trim Bock Contents">
-    Select the blocks in the cluster and "Ref Edit" or "Edit Block in Place" and trim the linework that is extending past the boundary area
-  </Step>
-  <Step title="Create KeyMap Block">
-    Select all of the site blocks that are in the cluster together, and create a block with the following properties:
+          - Drawing settings from source to destination
+          - Viewport / Layout consistency standards ""
+        </Check>
+      </Step>
+      <Step title="Trim Bock Contents">
+        Select the blocks in the cluster and "Ref Edit" or "Edit Block in Place" and trim the linework that is extending past the boundary area
+      </Step>
+      <Step title="Create KeyMap Block">
+        Select all of the site blocks that are in the cluster together, and create a block with the following properties:
 
-    <Frame>
-      ![Mintlify Key Map Example](/images/Mintlify_KeyMap_Example.png)
-    </Frame>
-  </Step>
-  <Step title="Purge Drawing">
-    Using the Drawing performance panel, click on the purge all drawing contents
-  </Step>
-  <Step title="Import Layer State">
-    Navigate to the KeyMap panel and select import keymap layerstate
-  </Step>
-  <Step title="Open Titleblock drawing">
-    1. Using the Drawing performance panel, click on the purge all drawing contents
-    2. Copy and Paste KeyMap block into drawing
-    3. Xref in an existing legend.dwg that is set up for a keymap as an overlay
-    4. Place KeyMap block insertion point generally in the center of the KeyMap open area.\
-       _(See Image for reference)_
-
-    1. Scale block manually to where it generally fits into the open area\
-       _(See Image for reference)_
-
-    <AccordionGroup>
-      <Accordion title="KeyMap Block Insertion location (Image)">
         <Frame>
-          ![Mintlify Key Map Titleblock Insertion Example](/images/Mintlify_KeyMap_Titleblock_Insertion_Example.png)
+          ![Mintlify Key Map Example](/images/Mintlify_KeyMap_Example.png)
         </Frame>
-      </Accordion>
+      </Step>
+      <Step title="Purge Drawing">
+        Using the Drawing performance panel, click on the purge all drawing contents
+      </Step>
+      <Step title="Import Layer State">
+        Navigate to the KeyMap panel and select import keymap layerstate
+      </Step>
+      <Step title="Open Titleblock drawing">
+        1. Using the Drawing performance panel, click on the purge all drawing contents
+        2. Copy and Paste KeyMap block into drawing
+        3. Xref in an existing legend.dwg that is set up for a keymap as an overlay
+        4. Place KeyMap block insertion point generally in the center of the KeyMap open area.\
+           _(See Image for reference)_
 
-      <Accordion title="KeyMap Block rough scale (Image)">
-      </Accordion>
-    </AccordionGroup>
-  </Step>
-  <Step title="Detailed property definitions">
-    Fine tune the block position and scale to where all of your contents fit cleanly inside your area with a max padding area of 0.1 from the legend base and border
+        1. Scale block manually to where it generally fits into the open area\
+           _(See Image for reference)_
 
-    1. Adjust **_Position X_** to a number at a precision of **_0.<u>00</u>_**
-    2. Adjust **_Position Y_** to a number at a precision of **_0.<u>00</u>_**
-    3. Adjust the **_Scale Factor_** to an even number at a precision of **_0.<u>0000</u>_**
-  </Step>
-  <Step title="Document block properties">
-    Create an Mtext and copy the block properties into this with the following format below:
+        <AccordionGroup>
+          <Accordion title="KeyMap Block Insertion location (Image)">
+            <Frame>
+              ![Mintlify Key Map Titleblock Insertion Example](/images/Mintlify_KeyMap_Titleblock_Insertion_Example.png)
+            </Frame>
+          </Accordion>
 
-    X: 00.00\
-    Y: 00.00\
-    S: 0.0000
+          <Accordion title="KeyMap Block rough scale (Image)">
+          </Accordion>
+        </AccordionGroup>
+      </Step>
+      <Step title="Detailed property definitions">
+        Fine tune the block position and scale to where all of your contents fit cleanly inside your area with a max padding area of 0.1 from the legend base and border
 
-    You can then Cut this out and place inside of your working keymap drawing
-  </Step>
-</Steps>
+        1. Adjust **_Position X_** to a number at a precision of **_0.<u>00</u>_**
+        2. Adjust **_Position Y_** to a number at a precision of **_0.<u>00</u>_**
+        3. Adjust the **_Scale Factor_** to an even number at a precision of **_0.<u>0000</u>_**
+      </Step>
+      <Step title="Document block properties">
+        Create an Mtext and copy the block properties into this with the following format below:
+
+        X: 00.00\
+        Y: 00.00\
+        S: 0.0000
+
+        You can then Cut this out and place inside of your working keymap drawing and scale to a larger text height to locate for future additions
+      </Step>
+    </Steps>
+  </Accordion>
+
+  <Accordion title="Modifying your KeyMap Block">
+  </Accordion>
+</AccordionGroup>
