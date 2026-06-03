@@ -39,18 +39,20 @@
             "pages": [
               "Training/overview",
               {
-                "group": "SB001 - Nova Court",
+                "group": "SB001",
+                "tag": "Nova Court",
                 "pages": [
-                  "Training/SB001-NovaCourt/project-description",
-                  "SB001-NovaCourt/stages",
-                  "SB001-NovaCourt/project-guide"
-                ],
-                "tag": "Small Development"
+                  "Training/SB001/project-description",
+                  "Training/SB001/stages",
+                  "Training/SB001/project-guide"
+                ]
               },
               {
-                "group": "SB002 - Nova Residential",
-                "pages": [],
-                "tag": "Residential Development"
+                "group": "SB002",
+                "tag": "Nova Residential",
+                "pages": [
+                  "Training/SB001/untitled-page"
+                ]
               }
             ]
           }
