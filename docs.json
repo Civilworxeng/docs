@@ -12,13 +12,25 @@
     "tabs": [
       {
         "tab": "Standards",
-        "groups": [
+        "dropdowns": [
           {
-            "group": "Standards",
-            "pages": []
+            "dropdown": "Standards",
+            "pages": [
+              "Standards/overview",
+              "Standards/folder-directory",
+              "Standards/templates",
+              "Standards/plotting",
+              "Standards/page-setup",
+              {
+                "group": "Production",
+                "pages": [
+                  "Standards/key-map"
+                ]
+              }
+            ]
           },
           {
-            "group": "Software How To",
+            "dropdown": "Software How To",
             "pages": [
               "standards/software-how-to/AutoCAD",
               "standards/software-how-to/civil3-d"
@@ -28,13 +40,27 @@
       },
       {
         "tab": "Training",
-        "dropdowns": [
+        "groups": [
           {
-            "dropdown": "Sandbox Projects",
+            "group": "Sandbox Projects",
             "pages": [
               "Training/overview",
-              "",
-              ""
+              {
+                "group": "SB001",
+                "tag": "Nova Court",
+                "pages": [
+                  "Training/SB001/project-description",
+                  "Training/SB001/stages",
+                  "Training/SB001/project-guide"
+                ]
+              },
+              {
+                "group": "SB002",
+                "tag": "Nova Residential",
+                "pages": [
+                  "Training/SB001/untitled-page"
+                ]
+              }
             ]
           }
         ]
