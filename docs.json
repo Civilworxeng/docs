@@ -16,8 +16,8 @@
           {
             "group": "Standards",
             "pages": [
-              "Standards/folder-directory",
               "Standards/overview",
+              "Standards/folder-directory",
               "Standards/templates",
               "Standards/plotting",
               "Standards/page-setup",
@@ -27,6 +27,12 @@
                   "Standards/key-map"
                 ]
               }
+            ]
+          },
+          {
+            "group": "Software How To",
+            "pages": [
+              "auto-cad"
             ]
           }
         ]
