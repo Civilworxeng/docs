@@ -18,9 +18,15 @@
             "pages": [
               "Standards/folder-directory",
               "Standards/overview",
-              "Standards/plotting",
               "Standards/templates",
-              "Standards/key-map"
+              "Standards/plotting",
+              "Standards/page-setup",
+              {
+                "group": "Production",
+                "pages": [
+                  "Standards/key-map"
+                ]
+              }
             ]
           }
         ]
@@ -35,6 +41,7 @@
               {
                 "group": "SB001 - Nova Court",
                 "pages": [
+                  "project-description",
                   "stages",
                   "project-guide"
                 ],
@@ -42,10 +49,8 @@
               },
               {
                 "group": "SB002 - Nova Residential",
-                "pages": [
-                  "untitled-page"
-                ],
-                "tag": "Residential"
+                "pages": [],
+                "tag": "Residential Development"
               }
             ]
           }
