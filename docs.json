@@ -26,11 +26,17 @@
                 "pages": [
                   "standards/key-map"
                 ]
+              },
+              {
+                "group": "Layers",
+                "pages": [
+                  "layers-overview"
+                ]
               }
             ]
           },
           {
-            "dropdown": "Software How To",
+            "dropdown": "Software Tips",
             "pages": [
               "standards/software-how-to/autocad",
               "standards/software-how-to/civil3d"
