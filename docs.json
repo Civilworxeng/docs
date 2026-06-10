@@ -23,7 +23,7 @@
               {
                 "group": "Production",
                 "pages": [
-                  "standards/key-map",
+                  "standards/production/key-map",
                   "standards/production/survey-base-translation"
                 ]
               },
