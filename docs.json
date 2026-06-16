@@ -29,9 +29,7 @@
               },
               {
                 "group": "Layers",
-                "pages": [
-                  "layers-overview"
-                ]
+                "pages": []
               },
               "standards/naming-convention"
             ],
