@@ -21,10 +21,9 @@
     "products": [
       {
         "product": "Standards",
-        "dropdowns": [
+        "anchors": [
           {
-            "dropdown": "Standards",
-            "description": "",
+            "anchor": "Standards",
             "pages": [
               "standards/overview",
               "standards/templates",
