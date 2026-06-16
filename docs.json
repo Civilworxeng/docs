@@ -8,15 +8,6 @@
     "dark": "#0B63D1"
   },
   "navigation": {
-    "global": {
-      "anchors": [
-        {
-          "anchor": "Documentation",
-          "href": "https://mintlify.com/docs",
-          "icon": "book-open-cover"
-        }
-      ]
-    },
     "tabs": [
       {
         "tab": "Standards",
