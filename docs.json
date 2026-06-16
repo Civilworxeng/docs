@@ -24,7 +24,8 @@
                 "group": "Production",
                 "pages": [
                   "standards/production/key-map",
-                  "standards/production/survey-translation-base-setup"
+                  "standards/production/survey-translation-base-setup",
+                  "standards/production/parcels"
                 ]
               },
               {
