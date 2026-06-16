@@ -1,0 +1,82 @@
+---
+title: "Naming Convention Standards"
+---
+
+### Summary:
+
+jfdks
+
+#### Strategy:
+
+The intent for having a standardized naming convention is about conveying the most information so that any users can identify clear intent
+
+### Windows Root Directory Limitations:
+
+File naming comes at a cost as the attached folder directory attaches itself to the file name, some filetypes can be rendered as non readable if the total character limit exceeds 255-260.\
+\
+Pipe Network Catalogs are a high risk example of a common Civil3D File type that can become non readable or the files will not be able to copy over.
+
+<Tree>
+  <Tree.Folder name="D:" defaultOpen>
+    <Tree.Folder name="Civilworx" defaultOpen>
+      <Tree.Folder name="Civilworx Dropbox" defaultOpen>
+        <Tree.Folder name="Civilworx" defaultOpen>
+          <Tree.Folder name="Standards" defaultOpen>
+            <Tree.Folder name="Catalogs" defaultOpen>
+              <Tree.Folder name="Pipes Catalogs" defaultOpen>
+                <Tree.Folder name="US Imperial Structures" defaultOpen>
+                  <Tree.Folder name="Inlet-Outlets" defaultOpen>
+                    <Tree.File name="AeccStructRecEndSectionforRoundCMP_Imperial.dwg" />
+                  </Tree.Folder>
+                </Tree.Folder>
+              </Tree.Folder>
+            </Tree.Folder>
+          </Tree.Folder>
+        </Tree.Folder>
+      </Tree.Folder>
+    </Tree.Folder>
+  </Tree.Folder>
+</Tree>
+
+**Full File Path:** _D:\\Civilworx\\CivilWorx Dropbox\\CivilWorx\\Standards\\Catalogs\\Pipes Catalog\\US Imperial Structures\\Inlet-Outlets\\AeccStructRecEndSectionforRoundCMP\_Imperial.dwg_\
+**Character Amount:** _158 Characters_
+
+## File Names
+
+<AccordionGroup>
+  <Accordion title="Civil3D Folder">
+    Proposed/Existing\_Civil3D Design Feature - Project ID.dwg
+
+    | Civil3D Feature | Description |
+    | --- | --- |
+    | PR\_Ground - Project ID | Grading Drawing that contains project surface |
+    | EX\_Ground - Project ID | Existing topographical survey |
+    | PR\_Roads - Project ID | Corridor Drawing that contains the corridor surface |
+    | PR\_Storm - Project ID | Storm Water Drainage |
+    | PR\_Water - Project ID | Potable Water |
+    | PR\_Sanitary - Project ID | Sanitary Sewer \[Gravity and Forcemains\] |
+    | PR\_NonPotable - Project ID | Irrigation and reclaimed water |
+    | EX\_Utilities - Project ID | Container file remodeling all of <br />existing pipe networks and pressure networks |
+  </Accordion>
+
+  <Accordion title="Master Folder">
+    Proposed/Existing\_Civil3D Design Feature - Project ID.dwg
+
+    | Base Feature | Description |
+    | --- | --- |
+    | PR\_Site - Project ID | Proposed site amenities, buildings, roadways,<br />grading features, paved surfaces |
+    | EX\_Site - Project ID | Existing site amenities, buildings, roadways,<br />grading features, paved surfaces |
+    | PR\_Mapping - Project ID | Proposed legal amenities, lots, property boundaries,<br /> right-of-way, easements, monuments, control points |
+    | EX\_Mapping - Project ID | Existing legal amenities, lots, property boundaries,<br /> right-of-way, easements, monuments, control points |
+    | PR\_Utilities - Project ID | Proposed utility structures and pipe layouts for both<br />data referenced networks and 2D linework or blocks |
+    | EX\_Utilities - Project ID | Existing utility structures and pipe layouts for both<br />data referenced networks and 2D linework or blocks |
+    | X\_PR\_Ground - Project ID | Data reference PR\_Ground to be used as an XREF Overlay |
+    | X\_EX\_Ground - Project ID | Data reference EX\_Ground to be used as an XREF Overlay |
+    | X\_Profiles\_Roads - Project ID | Data Referenced respective alignments, Design Surfaces and profiles |
+    | X\_Profiles\_Sanitary - Project ID | Data Referenced respective alignments, Design Surfaces, profiles and networks |
+    | X\_Profiles\_Water - Project ID | Data Referenced respective alignments, Design Surfaces, profiles and networks |
+    | X\_Profiles\_Storm - Project ID | Data Referenced respective alignments, Design Surfaces, profiles and networks |
+    | X\_Profiles\_NonPotable - Project ID | Data Referenced respective alignments, Design Surfaces, profiles and networks |
+    | X\_Profiles - Project ID | Typically done for smaller projects where one file<br />contains all roadway and utility profiles for easier management |
+  </Accordion>
+</AccordionGroup>

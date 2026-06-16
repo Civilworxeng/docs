@@ -32,7 +32,8 @@
                 "pages": [
                   "layers-overview"
                 ]
-              }
+              },
+              "standards/naming-convention"
             ],
             "description": ""
           }
