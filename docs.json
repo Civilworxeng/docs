@@ -23,8 +23,7 @@
               {
                 "group": "Production",
                 "pages": [
-                  "standards/production/key-map",
-                  "standards/production/survey-base-translation"
+                  "standards/production/key-map"
                 ]
               },
               {
@@ -35,13 +34,6 @@
               }
             ],
             "description": ""
-          },
-          {
-            "dropdown": "Software Tips",
-            "pages": [
-              "standards/software-how-to/autocad",
-              "standards/software-how-to/civil3d"
-            ]
           }
         ]
       },
