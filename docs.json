@@ -9,12 +9,22 @@
   },
   "favicon": "/favicon.svg",
   "navigation": {
-    "tabs": [
+    "global": {
+      "anchors": [
+        {
+          "anchor": "Documentation",
+          "href": "https://mintlify.com/docs",
+          "icon": "book-open-cover"
+        }
+      ]
+    },
+    "products": [
       {
-        "tab": "Standards",
+        "product": "Standards",
         "dropdowns": [
           {
             "dropdown": "Standards",
+            "description": "",
             "pages": [
               "standards/overview",
               "standards/templates",
@@ -40,13 +50,12 @@
                   "standards/software-tips/autocad"
                 ]
               }
-            ],
-            "description": ""
+            ]
           }
         ]
       },
       {
-        "tab": "Training",
+        "product": "Training",
         "groups": [
           {
             "group": "Sandbox Projects",
@@ -72,16 +81,7 @@
           }
         ]
       }
-    ],
-    "global": {
-      "anchors": [
-        {
-          "anchor": "Documentation",
-          "href": "https://mintlify.com/docs",
-          "icon": "book-open-cover"
-        }
-      ]
-    }
+    ]
   },
   "logo": {
     "light": "/logo/light.svg",
