@@ -83,13 +83,20 @@ This workflow allows making it possible to make updates to your keymap at any pa
         Select the blocks in the cluster and "Ref Edit" or "Edit Block in Place" and trim the linework that is extending past the boundary area
       </Step>
       <Step title="Create KeyMap Block">
-        Select all of the site blocks that are in the cluster together, and create a block with the following properties:\\
+        Select all of the site blocks that are in the cluster together, and create a block with the following properties:
 
         <Accordion title="KeyMap Block Definition (Image)">
           <Frame>
             ![Mintlify Key Map Block Example](/images/Mintlify_KeyMap_Block_Example.png)
           </Frame>
         </Accordion>
+      </Step>
+      <Step title="Place KeyMap block on B-Keymap Layer">
+        Select the Keymap Block and place it on the B-Keymap layer
+
+        <Tip>
+          If the layer is not present: Navigate to the layers panel and bring in the Background Set
+        </Tip>
       </Step>
       <Step title="Purge Drawing">
         Using the Drawing performance panel, click on the purge all drawing contents
@@ -172,9 +179,20 @@ This workflow allows making it possible to make updates to your keymap at any pa
   </Accordion>
 </AccordionGroup>
 
+### Linework being used
+
+| Linework Description | File Type |
+| --- | --- |
+| Paved Surfaces | Site |
+| Curb and Gutter | Site |
+| Property Boundary | Mapping |
+| Property Adjacent Boundary | Mapping |
+| Section Lines | Mapping |
+| Right-of-way | Mapping |
+
 ### Color Selection Standard Guide
 
-| Category | Color | Transparancy | Linetype |
+| Category | Color | Transparency | Linetype |
 | --- | --- | --- | --- |
 | PR\_Site | 247 | 0 | Continuous |
 | PR\_Mapping | 248 | 0 | Continuous |
