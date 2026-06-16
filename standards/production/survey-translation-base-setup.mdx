@@ -1,0 +1,268 @@
+---
+title: "survey-base-translation"
+---
+
+## Summary
+
+The Survey Based Translation Method is a controlled workflow used to translate raw survey drawings into Civilworx standardized base files while maintaining coordinate accuracy, reducing corrupted geometry, and enforcing consistent layer standards.
+
+This process separates survey cleanup, layer translation, and production base file generation into controlled phases to improve QAQC and maintain repeatability across projects.
+
+## Strategy
+
+This workflow utilizes three separate drawings simultaneously:
+
+1. Original Survey Drawing
+2. Temporary Layer Translation Drawing
+3. Clean Standard Production Drawing
+
+The purpose of this structure is to:
+
+- Prevent corruption of the original survey file
+- Allow controlled layer-by-layer translation
+- Enforce Civilworx layer standards
+- Maintain original coordinates throughout the workflow
+- Create clean production-ready base files
+
+## QAQC Requirements
+
+### Required QAQC Checks
+
+| QAQC Item | Requirement |
+| --- | --- |
+| Drawing Units | Ensure drawing units are set to International Feet |
+| Coordinate Consistency | Verify all drawings align correctly in world coordinates |
+| Elevation Cleanup | Ensure all linework elevations are set to 0 |
+| Polyline Conversion | Convert all survey figures and 3D polylines into standard polylines |
+| Block Cleanup | Explode or reduce blocks to their most basic usable state |
+| Surface Verification | Determine whether an existing ground surface exists |
+| Layer Translation | Ensure all objects are translated to Civilworx standard layers |
+| Purging | Purge all unused contents between workflow cycles |
+
+## Drawing Setup Workflow
+
+<Steps>
+  <Step title="Save Working Copy">
+    Save the survey drawing into the project working folder before beginning modifications.
+  </Step>
+  <Step title="Create Temporary Layer Translation Drawing">
+    Create a new drawing using the **CWX\_CleanStandard** template.
+
+    Save this drawing as:
+
+    `Temporary Layer Translation.dwg`
+
+    <Tree>
+      <Tree.Folder name="Project Folder" defaultOpen>
+        <Tree.Folder name="Working" defaultOpen>
+          <Tree.File name="Temporary Layer Translation.dwg" />
+        </Tree.Folder>
+      </Tree.Folder>
+    </Tree>
+  </Step>
+  <Step title="Create Clean Standard Production Drawing">
+    Create another new drawing using the **CWX\_CleanStandard** template.
+
+    This drawing will become the final production-ready base file.
+  </Step>
+  <Step title="Verify Open Drawings">
+    At this stage you should have three drawings opened simultaneously:
+
+    1. Original Survey Drawing
+    2. Temporary Layer Translation Drawing
+    3. Clean Standard Production Drawing
+  </Step>
+</Steps>
+
+## Survey Cleanup Workflow
+
+<Steps>
+  <Step title="Reduce Block Structures">
+    Remove unnecessary nested or survey-exported block structures.
+  </Step>
+  <Step title="Convert Survey Figures and 3D Geometry">
+    Convert:
+
+    - Survey Figures
+    - 3D Polylines
+    - Elevated geometry
+
+    Into:
+
+    - Standard Polylines
+    - Elevation = 0 geometry
+  </Step>
+  <Step title="Flatten Geometry">
+    Ensure all entities throughout the drawing are flattened to elevation 0 where applicable.
+  </Step>
+  <Step title="Review Existing Ground Surface">
+    Determine whether an existing surface is present in the drawing.
+
+    If a surface exists:
+
+    1. Proceed to Existing Ground Surface workflow
+    2. Create proper Existing Ground deliverables
+    3. Remove the surface from the active translation drawing after completion
+  </Step>
+  <Step title="Initial QAQC Pass">
+    Validate the following:
+
+    - No unintended elevated geometry
+    - No remaining survey figures
+    - No unnecessary blocks
+    - Coordinate consistency maintained
+    - Units verified
+  </Step>
+</Steps>
+
+## Layer Translation Workflow
+
+<Steps>
+  <Step title="Identify Feature Groups">
+    Identify the feature groups to translate:
+
+    - Existing Site
+    - Existing Utilities
+    - Existing Mapping
+    - Other applicable feature groups
+  </Step>
+  <Step title="Isolate Feature Layer">
+    Using the survey drawing:
+
+    1. Perform a **LAYISO**
+    2. Isolate the target feature layer
+    3. Use **SELECTSIMILAR** to gather all related geometry
+  </Step>
+  <Step title="Cut Geometry from Survey Drawing">
+    Cut the isolated geometry from the survey drawing.
+
+    `[CTRL + X]`
+  </Step>
+  <Step title="Paste Original Coordinates">
+    Navigate to the Temporary Layer Translation Drawing.
+
+    Paste the geometry using:
+
+    `Paste Original Coordinates`
+  </Step>
+  <Step title="Import Correct Civilworx Layer Set">
+    Navigate to:
+
+    `Civilworx Standards → Layers Panel`
+
+    Import the corresponding layer category:
+
+    - Existing Site Layers
+    - Existing Utility Layers
+    - Existing Mapping Layers
+  </Step>
+  <Step title="Translate Geometry to Correct Layers">
+    Move all imported geometry onto the correct Civilworx standard layers.
+  </Step>
+  <Step title="Freeze Completed Translation Layer">
+    After translation is complete:
+
+    1. Perform **LAYFRZ**
+    2. Freeze completed layers
+    3. Continue to next survey layer
+  </Step>
+  <Step title="Repeat Translation Loop">
+    Repeat the entire translation cycle until all applicable survey geometry has been translated into Civilworx standards.
+  </Step>
+</Steps>
+
+<Tip>
+  The Temporary Layer Translation Drawing acts as an intermediary cleanup and translation environment before geometry is introduced into production base files.
+</Tip>
+
+## Translation Loop QAQC
+
+<Steps>
+  <Step title="Verify Geometry Cleanup">
+    Confirm:
+
+    - Elevations are set to 0
+    - Geometry consists of standard polylines
+    - Blocks are fully cleaned
+    - Coordinates remain unchanged
+  </Step>
+  <Step title="Validate Layer Standards">
+    Ensure all geometry has been translated into the correct Civilworx layer naming structure.
+  </Step>
+  <Step title="Purge Drawing">
+    Purge all unused drawing contents between major translation cycles.
+  </Step>
+  <Step title="Verify Missing Geometry">
+    Compare the translated contents against the original survey drawing to ensure no geometry was omitted.
+  </Step>
+</Steps>
+
+## Base File Creation Workflow
+
+<Steps>
+  <Step title="Prepare Temporary Translation Drawing">
+    1. Thaw all frozen layers
+    2. Validate all translated geometry
+  </Step>
+  <Step title="Transfer Geometry to Production Drawing">
+    Select all translated geometry.
+
+    Cut contents from the Temporary Layer Translation Drawing and:
+
+    `Paste Original Coordinates`
+
+    Into the Clean Standard Production Drawing.
+  </Step>
+  <Step title="Perform Final QAQC">
+    Compare the production drawing against the original survey drawing.
+
+    Verify:
+
+    - No missing geometry
+    - Correct coordinates
+    - Correct layering
+    - Correct cleanup standards
+  </Step>
+  <Step title="Save Production Base File">
+    Perform a Save As using the Civilworx file naming convention standards.
+
+    Save into the proper master project folder structure.
+  </Step>
+  <Step title="Restart Translation Cycle">
+    After one category is complete:
+
+    1. Create a new clean temporary translation environment
+    2. Import corresponding layer categories
+    3. Repeat translation workflow for next feature group
+  </Step>
+</Steps>
+
+## Workflow Logic Diagram
+
+| Drawing | Purpose |
+| --- | --- |
+| Survey Drawing | Source geometry extraction |
+| Temporary Layer Translation Drawing | Cleanup and layer translation |
+| Clean Standard Production Drawing | Final standardized base file |
+
+## Translation Workflow Loop Summary
+
+```text
+Survey Drawing
+↓
+LAYISO
+↓
+SELECTSIMILAR
+↓
+CUT
+↓
+Paste Original Coordinates
+↓
+Translate to Correct Civilworx Layers
+↓
+Freeze Completed Layers
+↓
+Repeat Until Complete
+↓
+Transfer to Production Base File
+```
