@@ -31,7 +31,14 @@
                 "group": "Layers",
                 "pages": []
               },
-              "standards/naming-convention"
+              "standards/naming-convention",
+              {
+                "group": "software-tips-directory",
+                "pages": [
+                  "standards/software-tips/civil3d",
+                  "standards/software-tips/autocad"
+                ]
+              }
             ],
             "description": ""
           }
