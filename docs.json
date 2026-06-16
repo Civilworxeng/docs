@@ -17,9 +17,9 @@
         }
       ]
     },
-    "products": [
+    "tabs": [
       {
-        "product": "Standards",
+        "tab": "Standards",
         "anchors": [
           {
             "anchor": "Standards",
@@ -53,7 +53,7 @@
         ]
       },
       {
-        "product": "Training",
+        "tab": "Training",
         "groups": [
           {
             "group": "Sandbox Projects",
