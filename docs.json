@@ -16,15 +16,15 @@
             "anchor": "Production",
             "pages": [
               "production/standards-overview",
-              "production/survey-translation-base-setup",
               "production/page-setup",
               "production/plotting",
               "production/key-map",
+              "production/survey-translation-base-setup",
               {
                 "group": "software-tips",
                 "pages": [
-                  "standards/production/software-tips/civil3d",
-                  "standards/production/software-tips/autocad"
+                  "standards/production/software-tips/autocad",
+                  "standards/production/software-tips/civil3d"
                 ]
               },
               {
