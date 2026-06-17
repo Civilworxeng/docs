@@ -10,7 +10,7 @@ kjfkdddfsdsfasd
 
 dssd
 
-### Where to find parcel creation tools
+## Where to find parcel creation tools
 
 Home Tab → Create Design Panel → Parcel _(See below for image)_
 
@@ -20,7 +20,7 @@ Home Tab → Create Design Panel → Parcel _(See below for image)_
   </Frame>
 </Accordion>
 
-### Create parcel by object
+## Create parcel by object
 
 1. Have your Polylines local in the drawing
 2. Select Create **_Parcels from Objects_**
@@ -42,3 +42,67 @@ Home Tab → Create Design Panel → Parcel _(See below for image)_
     </Accordion>
   </Column>
 </Columns>
+
+# Rename and Renumber Parcels
+
+## Residential
+
+Depending on the addressing of the parcels will determine which set of labels and workflow
+
+#### Parcel rename and renumbering
+
+<Columns cols={2}>
+  <Column>
+    Primary Workflow
+
+    - Lots are in continuous sequence
+    - Lots numbers **DO NOT** "Reset"\
+      in each block
+    - Lots will not share the same value
+  </Column>
+  <Column>
+    Alternate Workflow
+
+    - Lot number sequence "Reset" \
+      in each block area
+    - Lot numbers will essentially be\
+      "Duplicate" values
+      <Accordion title="Renumbering Guide">
+        <Steps>
+          <Step title="Select an area face label">
+            You can select any label, we just need to trigger the parcel contextual ribbon
+          </Step>
+          <Step title="Select Renumber/Rename">
+            You can find this in the modify panel
+          </Step>
+          <Step title="Set your starting number with the corresponding block as a prefix">
+            <Frame>
+              ![Parcel Renumber Residential Alternate](/images/parcel_renumber_residential_alternate.png)
+            </Frame>
+            1 = Block Number\
+            01 = Lot Number
+          </Step>
+          <Step title="Select the starting parcel area">
+            This sequence will be the starting lot number in the block
+          </Step>
+          <Step title="Select the end parcel area">
+            You can click in any part of the parcel area
+            <Warning>
+              Ensure to line doesn't cross any other non-intended parcel areas
+            </Warning>
+            <Frame>
+              <img
+                src="/images/parcel_renumber_residential_alternate_sequence.png"
+                alt="Parcel Renumber Residential Alternate Sequence"
+                title="Parcel Renumber Residential Alternate Sequence"
+              />
+            </Frame>
+          </Step>
+        </Steps>
+      </Accordion>
+  </Column>
+</Columns>
+
+### Blocks
+
+### Tracts / Outlots
