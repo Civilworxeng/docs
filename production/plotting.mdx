@@ -1,3 +1,60 @@
 ---
 title: "Plotting"
 ---
+
+## SheetSet
+
+#### Publish Dialog Box
+
+<Steps>
+  <Step title="Open Desired Sheet Set through the Sheet Set Manager ">
+    <Tree>
+      <Tree.Folder name="Autocad">
+        <Tree.Folder name="Construction Sheets">
+          <Tree.File name="SheetSet.dst" />
+        </Tree.Folder>
+      </Tree.Folder>
+    </Tree>
+  </Step>
+</Steps>
+
+<AccordionGroup>
+  <Accordion title="Full Set Publish Guide">
+    <Steps>
+      <Step title="Select sheet set name at the top">
+      </Step>
+      <Step title='Right click → Hover over "Publish" → select "Sheet Set PDF Options"'>
+        Right click then proceed to hover over the publish option, then navigate to the bottom of the list and select the "Sheet Set PDF Options"
+      </Step>
+      <Step title='Option: Adjust presets for a "Multi-sheet file"'>
+        <Frame>
+          ![Plotting Sheetset Pdf Options](/images/plotting_sheetset_pdf_options.png)
+        </Frame>
+      </Step>
+      <Step title='Civilworx Standard Option: Adjust presets for a "single sheet file"'>
+        <Frame>
+          ![Plotting Sheetset Pdf Options Sheets](/images/plotting_sheetset_pdf_options_sheets.png)
+        </Frame>
+
+        <Tree>
+          <Tree.Folder name="PDF">
+            <Tree.Folder name="yyyy.dd.mm_Set Description" defaultOpen>
+              <Tree.Folder name="Sheets" defaultOpen />
+            </Tree.Folder>
+          </Tree.Folder>
+        </Tree>
+
+        <Tip>
+          This is preferred as you can publish individual sheets directly and you're able to swap out sheets efficiently instead of manually swapping out sheets in a combined set
+        </Tip>
+      </Step>
+    </Steps>
+  </Accordion>
+
+  <Accordion title="Partial Set">
+  </Accordion>
+</AccordionGroup>
+
+## Publish
+
+## Plot
