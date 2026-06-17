@@ -18,6 +18,7 @@
               "production/standards-overview",
               "production/page-setup",
               "production/plotting",
+              "production/templates",
               "production/key-map",
               "production/survey-translation-base-setup",
               {
@@ -36,8 +37,7 @@
                   "parcels/parcel-labeling"
                 ]
               },
-              "production/naming-convention",
-              "production/templates"
+              "production/naming-convention"
             ]
           }
         ]
