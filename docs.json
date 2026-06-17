@@ -19,23 +19,15 @@
               "standards/templates",
               "standards/plotting",
               "standards/page-setup",
-              {
-                "group": "temp",
-                "pages": [
-                  "standards/production/key-map",
-                  "standards/production/survey-translation-base-setup",
-                  "standards/production/parcels"
-                ]
-              },
-              {
-                "group": "Layers",
-                "pages": []
-              },
+              "standards/production/key-map",
+              "standards/production/parcels",
+              "standards/production/survey-translation-base-setup",
               "standards/naming-convention",
               {
-                "group": "software-tips-directory",
+                "group": "software-tips",
                 "pages": [
-                  "standards/software-tips/autocad"
+                  "production/software-tips/civil3d",
+                  "production/software-tips/autocad"
                 ]
               }
             ]
