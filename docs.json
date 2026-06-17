@@ -28,6 +28,15 @@
                   "production/software-tips/civil3d",
                   "production/software-tips/autocad"
                 ]
+              },
+              {
+                "group": "Parcels",
+                "pages": [
+                  "parcels/parcel-overview",
+                  "parcels/parcel-use-cases",
+                  "parcels/parcel-creation",
+                  "parcels/parcel-labeling"
+                ]
               }
             ]
           }
