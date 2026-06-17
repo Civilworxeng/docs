@@ -24,7 +24,13 @@
                 "pages": [
                   "standards/production/key-map",
                   "standards/production/survey-translation-base-setup",
-                  "standards/production/parcels"
+                  "standards/production/parcels",
+                  {
+                    "group": "Untitled Group",
+                    "pages": [
+                      "training/table-of-contents"
+                    ]
+                  }
                 ]
               },
               {
