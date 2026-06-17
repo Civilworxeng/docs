@@ -13,14 +13,14 @@
         "tab": "Standards",
         "anchors": [
           {
-            "anchor": "Standards",
+            "anchor": "Production",
             "pages": [
               "standards/overview",
               "standards/templates",
               "standards/plotting",
               "standards/page-setup",
               {
-                "group": "Production",
+                "group": "temp",
                 "pages": [
                   "standards/production/key-map",
                   "standards/production/survey-translation-base-setup",
@@ -35,7 +35,6 @@
               {
                 "group": "software-tips-directory",
                 "pages": [
-                  "standards/software-tips/civil3d",
                   "standards/software-tips/autocad"
                 ]
               }
