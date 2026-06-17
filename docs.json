@@ -15,18 +15,18 @@
           {
             "anchor": "Production",
             "pages": [
-              "standards/overview",
-              "standards/templates",
-              "standards/plotting",
-              "standards/page-setup",
+              "standards/production/overview",
+              "standards/production/templates",
+              "standards/production/plotting",
+              "standards/production/page-setup",
               "standards/production/key-map",
               "standards/production/survey-translation-base-setup",
-              "standards/naming-convention",
+              "standards/production/naming-convention",
               {
                 "group": "software-tips",
                 "pages": [
-                  "production/software-tips/civil3d",
-                  "production/software-tips/autocad"
+                  "standards/production/software-tips/civil3d",
+                  "standards/production/software-tips/autocad"
                 ]
               },
               {
