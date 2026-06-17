@@ -15,13 +15,6 @@
           {
             "anchor": "Production",
             "pages": [
-              "standards/production/overview",
-              "standards/production/templates",
-              "standards/production/plotting",
-              "standards/production/page-setup",
-              "standards/production/key-map",
-              "standards/production/survey-translation-base-setup",
-              "standards/production/naming-convention",
               {
                 "group": "software-tips",
                 "pages": [
@@ -37,7 +30,14 @@
                   "parcels/parcel-creation",
                   "parcels/parcel-labeling"
                 ]
-              }
+              },
+              "production/key-map",
+              "production/page-setup",
+              "production/plotting",
+              "production/naming-convention",
+              "production/standards-overview",
+              "production/templates",
+              "production/survey-translation-base-setup"
             ]
           }
         ]
