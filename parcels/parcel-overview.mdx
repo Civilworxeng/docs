@@ -8,8 +8,21 @@ Parcels should be used to label enclosed boundaries and can improve production w
 
 ### Strategy:
 
-Were able to utilize the functionality of XREF labeling drainage area maps basin labels or labeling lots, blocks and tracts/outlots efficiently. With the ability to label through XREFs we have the ability to manually adjusting the label style for each viewport or annotative scale changes.
+Were able to utilize the functionality of XREF labeling drainage area maps basin labels or labeling lots, blocks and tracts / outlots efficiently. With the ability to label through XREFs we have the ability to manually adjusting the label style for each viewport or annotative scale changes.
 
 <Card title="Understanding Parcels" icon="sparkles" href="https://help.autodesk.com/view/CIV3D/2015/ENU/?guid=GUID-A7C68B13-263B-4F89-ABE4-B12F121FC752" cta="Autodesk Forum">
   Navigate to this directory and see more information regarding parcels
 </Card>
+
+### How to manage PR\_Parcel drawings
+
+Any type of parcel labeling methods that we are using for a project, we need to always have a separate drawing that we are referencing that is saved in our respective master folder. We do not want to incorporate it within our PR\_Mapping.
+
+<Accordion title="Expand on why its the standard for separate drawings">
+  - If PR\_Mapping becomes corrupted or if you need to swap out to previous versions, this has no impact on existing labels from parcel area labels in the construction drawings
+  - Drastically reduces the potential of anyone accidentally modifying or deleting parcel segments
+  - Easier flows for transmitting out PR\_Mapping externally, otherwise you would need to spend time cleaning up the file and sending out just the mapping linework
+    <Danger>
+      Parcel area labels and default area labels will disappear if segments are frozen or turned off, so they will need to be placed as the far back display order, you can always modify segment layer transparency to barely visible.
+    </Danger>
+</Accordion>
