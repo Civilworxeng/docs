@@ -51,60 +51,41 @@ Depending on the addressing of the parcels will determine which set of labels an
 
 ### Parcel rename and renumbering
 
-<Columns cols={2}>
-  <Column>
-    Primary Workflow
+Primary Workflow
 
-    - Lots are in continuous sequence
-    - Lots numbers **DO NOT** "Reset"\
-      in each block
-    - Lots will not share the same value
-  </Column>
-  <Column>
-    Alternate Workflow
-
-    - Lot number sequence "Reset" \
-      in each block area
-    - Lot numbers will essentially be\
-      "Duplicate" values
-      <Accordion title="Renumbering Guide">
-        <Steps>
-          <Step title="Select an area face label">
-            You can select any label, we just need to trigger the parcel contextual ribbon
-          </Step>
-          <Step title="Select Renumber/Rename">
-            You can find this in the modify panel
-          </Step>
-          <Step title="Set your starting number with the corresponding block as a prefix">
-            <Frame>
-              ![Parcel Renumber Residential Alternate](/images/parcel_renumber_residential_alternate.png)
-            </Frame>
-            1 = Block Number\
-            01 = Lot Number
-          </Step>
-          <Step title="Select the starting parcel area">
-            This sequence will be the starting lot number in the block
-          </Step>
-          <Step title="Select the end parcel area">
-            You can click in any part of the parcel area for your start to end
-            <Warning>
-              Ensure to line doesn't cross any other non-intended parcel areas
-            </Warning>
-            <Frame>
-              <img
-                src="/images/parcel_renumber_residential_alternate_sequence.png"
-                alt="Parcel Renumber Residential Alternate Sequence"
-                title="Parcel Renumber Residential Alternate Sequence"
-              />
-            </Frame>
-          </Step>
-          <Step title="Block numbering">
-            With this workflow - the block numbers are already completed by the lot numbering process
-          </Step>
-        </Steps>
-      </Accordion>
-  </Column>
-</Columns>
+- Lot number sequence "Reset" in each block area
+- Lot numbers will essentially be "Duplicate" values
+  <Accordion title="Renumbering Guide">
+    <Steps>
+      <Step title="Select an area face label">
+        You can select any label, we just need to trigger the parcel contextual ribbon
+      </Step>
+      <Step title="Select Renumber/Rename">
+        You can find this in the modify panel
+      </Step>
+      <Step title="Set your starting number with the corresponding block as a prefix">
+        <Frame>
+          ![Parcel Renumber Residential Alternate](/images/parcel_renumber_residential_alternate.png "Parcel Renumber Residential Alternate")
+        </Frame>
+        1 = Block Number<br />01 = Lot Number
+      </Step>
+      <Step title="Select the starting parcel area">
+        This sequence will be the starting lot number in the block
+      </Step>
+      <Step title="Select the end parcel area">
+        You can click in any part of the parcel area for your start to end
+        <Warning>
+          Ensure to line doesn't cross any other non-intended parcel areas
+        </Warning>
+        <Frame>
+          ![Parcel Renumber Residential Alternate Sequence](/images/parcel_renumber_residential_alternate_sequence.png "Parcel Renumber Residential Alternate Sequence")
+        </Frame>
+      </Step>
+      <Step title="Block numbering">
+        With this workflow - the block numbers are already completed by the lot numbering process
+      </Step>
+    </Steps>
+  </Accordion>
 
 ### Block Numbering
 
@@ -115,8 +96,7 @@ Depending on the addressing of the parcels will determine which set of labels an
 These are the open areas that doesn't contain lot/block numbers
 
 <Tip>
-  Tracts / Outlots should be placed on the CWX | Hatched Area\
-  This will make labeling open areas easier and can give you a visual confirmation of your tract/outlot area
+  Tracts / Outlots should be placed on the CWX | Hatched Area<br />This will make labeling open areas easier and can give you a visual confirmation of your tract/outlot area
 </Tip>
 
 <Accordion title="Renaming Guide">
@@ -132,7 +112,7 @@ These are the open areas that doesn't contain lot/block numbers
     </Step>
     <Step title="Select the tract property description cell">
       <Frame>
-        ![Parcel Tract Residential Alternate](/images/parcel_tract_residential_alternate.png)
+        ![Parcel Tract Residential Alternate](/images/parcel_tract_residential_alternate.png "Parcel Tract Residential Alternate")
       </Frame>
     </Step>
   </Steps>
